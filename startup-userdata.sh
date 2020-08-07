@@ -121,7 +121,8 @@ export CENTRIFYCC_GROUP_IGNORE=
 # The options shall be list(separated by space) such as --resource-setting ProxyUser:centrify .
 export CENTRIFYCC_CENROLL_ADDITIONAL_OPTIONS=''
 
-
+# Specify if SELinux to be disabled in RedHat 8. This is to workaround the bug in CentrifyCC whereby it can't be started in RedHat 8
+export CENTRIFYCC_DISABLE_SELINUX=no
 
 ####### Set Configuration Parameters for CentrifyDC ###########
 # The user name and password required to access Centrify repository.  
