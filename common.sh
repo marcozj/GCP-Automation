@@ -286,7 +286,7 @@ function download_install_rpm
         
     case "$OS_NAME" in
     rhel|amzn|centos|sles)
-        rpm -ivh $download_dir/$rpm_package
+        rpm -ivh --force $download_dir/$rpm_package
         r=$?
         if [ $r -ne 0 ];then
             echo "$CENTRIFY_MSG_PREX: install the rpm package $rpm_package unsuccessfully"
